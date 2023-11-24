@@ -5,13 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vu js</title>
+    <!-- mio foglio di style-->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <main>
         <div id="app">
-            <h1 :class="h1Style">{{messaggioBenvenuto}}</h1>
+            <!-- messaggio benvenuto-->
+            <h1 :class="h1Style">{{messaggioBenvenuto}}
+            </h1>
+            <!--descrizione-->
+            <p :class="descrizione">{{paragrafo}}</p>
+            <!--immagine-->
             <div :class="imgStyle">
                 <img :src="immagine" :alt="alt">
             </div>
